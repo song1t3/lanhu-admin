@@ -1,0 +1,74 @@
+// 消除右边边框
+.el-menu{
+  border-right: none !important;
+}
+.el-menu-item{
+  font-size: 14px;
+  padding-left: 50px !important;
+  &.is-active{
+    background-color: rgba(248, 108, 108, 0.2) !important;
+  }
+}
+// 修改一级菜单样式
+li.el-submenu{
+  &.is-active.is-opened .el-submenu__title{
+      background-color: $mainColor !important;
+  }
+} 
+//左侧导航栏收起时，修改选中背景色样式
+.close {
+  .el-submenu{
+    &.is-opened{
+      > .el-submenu__title{
+        background-color: $mainColor !important;
+      }
+    }
+  }
+}
+.el-menu--vertical{
+  .el-menu-item{
+    background-color:  rgba(248, 108, 108, 0.2) !important;
+  }
+  .el-menu-item:hover{
+    background-color: $mainColor !important;
+  }
+}
+
+// tab样式
+div.el-table {
+  th, td {
+    text-align: center;
+  }
+  th {
+    font-weight: bold;
+    color: #344a5f;
+  }
+  td {
+    font-size: 14px;
+  }
+}
+// dialog的样式
+.el-dialog__header {
+  padding: 20px 20px 10px 32px;
+}
+.el-dialog__body {
+  padding: 30px 47px;
+}
+.el-dialog__footer {
+  text-align: center;
+  padding-bottom: 50px;
+  .el-button{
+    width: 150px;
+    margin: 0 11px;
+  }
+}
+// from样式
+.el-form {
+  .el-form-item:last-child{
+    margin-bottom: 0;
+  }
+}
+div.el-form-item {
+  margin-bottom: 22px;
+}
+
